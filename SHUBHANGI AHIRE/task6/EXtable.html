@@ -1,0 +1,55 @@
+<!--IMPLEMENT FORM INPUT TYPES AND TABLES-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table and Form</title>
+</head>
+<body>
+    <center>
+    <form action="/submit-form" method="POST">
+        <table border="2">
+            <tr>
+                <th>Field</th>
+                <th>Input</th>
+            </tr>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number" id="age" name="age" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female"><label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="pwd">password</label></td>
+                <td>
+                    <input type="password" id="pwd" nmae="pwd">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="checkbox">flowers</label></td>
+                <td><input type="checkbox" id="flower" nmae="rose"></td>
+            </tr>
+            <tr>
+                <td><label for="comments">Comments:</label></td>
+                <td><textarea id="comments" name="comments"></textarea></td>
+            </tr>
+        </table>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</center>
+</body>
+</html>

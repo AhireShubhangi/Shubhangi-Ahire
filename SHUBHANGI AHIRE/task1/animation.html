@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Car Animation</title>
+    <style>
+       
+        h2{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        body {
+            background-color: #edf1ed;
+        }
+
+        .road {
+
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background-color: #030303;
+            overflow: hidden;
+            margin-top: 100px; 
+        }
+        .center-line {
+            position: absolute;
+            top: 50%;
+            left:0;
+            right: 0;
+            height: 5px;
+            background: repeating-linear-gradient(to right,white 0px,white 20px,transparent 30px,transparent 40px );
+            }
+
+        .car {
+            position: absolute;
+            bottom: 10px;
+            width: 150px;  
+            height: 100px;  
+            background-size: contain;  
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .car1 {
+            animation-delay: 2s;
+            left: 100px;
+            animation: driveCar1 10s forwards;
+            background-image: url("CC.jpg"); 
+        }
+
+        .car2 {
+            animation-delay: 2s;
+            left: 100px;
+            margin-bottom: 90px;
+            animation: driveCar2 15s forwards;
+            background-image: url("C.jpg"); 
+        }
+
+        .car3 {
+            animation-delay: 2s;
+            left: 100px;
+            margin-bottom: 180px;
+            animation: driveCar3 20s forwards;
+            background-image: url("CCC.jpg"); 
+        }
+
+        @keyframes driveCar1 {
+            0% { 
+                left: 0px;
+             }
+            100% { 
+                left: 100%;
+             }
+        }
+
+        @keyframes driveCar2 {
+            0% { 
+                left: 0px;
+             }     
+            100% { 
+                left: 100%;
+             }
+        }
+
+        @keyframes driveCar3 {
+            0% { 
+                left: 0px;
+             }    
+            100% {
+                 left: 100%;
+                 }
+        }
+
+    </style>
+</head>
+<body>
+   <center> <h2>Task:Create Car Racing Using CSS Animation</h1>
+    <h2>Name:Shubhangi Ahire</h2>
+    <h2>date:10/1/2025</h2></center>
+    <hr>
+    <div class="road">
+        <div class="center-line"></div>
+        <div class="car car1"></div>
+        <div class="car car2"></div>
+        <div class="car car3"></div>
+    </div>
+</body>
+</html>
